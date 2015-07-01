@@ -9,14 +9,14 @@ description: "Write an awesome description for your new site here. You can edit 
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary: 26A69A
-  secondary: 00695C  
+  secondary: 00695C
   secondary-dark: 333
 
 # Team names, titles and social links
 people:
-- name: Kay Garland
-  pic: 1
-  position: Lead Designer
+- name: David Jenkins
+  pic: david
+  position: Project Lead Developer
   social:
     - title: twitter
       url: #
@@ -25,9 +25,9 @@ people:
     - title: stack-overflow
       url: #
 
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
+- name: O'Neil Mateo
+  pic: jose
+  position: Lead Android Developer
   social:
     - title: twitter
       url: #
@@ -36,9 +36,9 @@ people:
     - title: linkedin
       url: #
 
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
+- name: Jake Spracher
+  pic: jake
+  position: Lead iOS Developer
   social:
     - title: twitter
       url: #
@@ -46,6 +46,17 @@ people:
       url: #
     - title: google-plus
       url: #
+
+- name: Franck Tchouambou
+  pic: franck
+  position: Growth Hacker & Business Developer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: google-plus
+      url: #	  
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
@@ -58,8 +69,8 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: 308 Westover Avenue
+  - line: Norfolk, VA 23507
 
 # Build settings
 markdown: kramdown
