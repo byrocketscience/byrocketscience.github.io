@@ -1,5 +1,11 @@
 $(function() {
 
+    function validateField(field) {
+        if( field.val().trim().length == 0 || field.val().trim() == '') {
+            field.parent().addClass('has-error');
+        }
+    }
+
     $("input,textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
@@ -8,18 +14,27 @@ $(function() {
         submitSuccess: function($form, event) {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
-            var name = $("input#name").val();
-            var email = $("input#email").val();
-            var phone = $("input#phone").val();
-            var message = $("textarea#message").val();
+            var nameField = $("input#name");
+            validateField(nameField);
+            var emailField = $("input#email");
+            var phoneField = $("input#phone");
+            var messageField = $("input#message");
+
+            var name = nameField.val();
+            var email = emailField.val();
+            var phone = phoneField.val();
+            var message = messageField.val();
+            
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "//formspree.io/contact@byrocketscience.com",
                 type: "POST",
+                crossDomain: true,
+                dataType: "json",
                 data: {
                     name: name,
                     phone: phone,
