@@ -37,6 +37,9 @@ a.active {
 
 a {
     color: #{{ site.color.primary }};
+    webkit-transition: 0.5s;
+    moz-transition: 0.5s;
+    transition: 0.5s;
 }
 
 a:hover,
@@ -44,6 +47,9 @@ a:focus,
 a:active,
 a.active {
     color: #{{ site.color.secondary }};
+    webkit-transition: 0.5s;
+    moz-transition: 0.5s;
+    transition: 0.5s;
 }
 
 h1,
@@ -76,6 +82,9 @@ h6 {
     font-weight: 700;
     color: #fff;
     background-color: #{{ site.color.primary }};
+    webkit-transition: 0.5s;
+    moz-transition: 0.5s;
+    transition: 0.5s;
 }
 
 .btn-primary:hover,
@@ -86,6 +95,9 @@ h6 {
     border-color: #{{ site.color.primary }};
     color: #fff;
     background-color: #{{ site.color.secondary }};
+    webkit-transition: 0.5s;
+    moz-transition: 0.5s;
+    transition: 0.5s;
 }
 
 .btn-primary:active,
@@ -128,6 +140,9 @@ fieldset[disabled] .btn-primary.active {
     font-weight: 700;
     color: #fff;
     background-color: #{{ site.color.primary }};
+    webkit-transition: 0.5s;
+    moz-transition: 0.5s;
+    transition: 0.5s;
 }
 
 .btn-xl:hover,
@@ -138,6 +153,9 @@ fieldset[disabled] .btn-primary.active {
     border-color: #{{ site.color.primary }};
     color: #fff;
     background-color: #{{ site.color.secondary }};
+    webkit-transition: 0.5s;
+    moz-transition: 0.5s;
+    transition: 0.5s;
 }
 
 .btn-xl:active,
