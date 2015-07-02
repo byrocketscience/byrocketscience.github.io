@@ -19,11 +19,11 @@ people:
   position: Project Lead Developer
   social:
     - title: twitter
-      url: #
+      url: https://twitter.com/boarderdav
     - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
+      url: https://www.facebook.com/boarderdav
+    - title: linkedin
+      url: https://www.linkedin.com/in/davidjenkinspe
 
 - name: O'Neill Mateo
   pic: jose
@@ -66,6 +66,8 @@ social:
     url: https://www.facebook.com/ByRocketScience
   - title: google-plus
     url: https://plus.google.com/105510692232230355051
+  - title: instagram
+    url: http://instagram.com/ByRocketScience
 
 # Postal address (add as many lines as necessary)
 address:
