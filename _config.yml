@@ -27,18 +27,18 @@ people:
 
 - name: O'Neill Mateo
   pic: jose
-  position: Lead Android Developer
+  position: Android and Web Developer
   social:
     - title: twitter
-      url: #
-    - title: facebook
-      url: #
+      url: https://twitter.com/yomat3o
+    - title: google-plus
+      url: https://plus.google.com/+JoseMateoA/
     - title: linkedin
-      url: #
+      url: http://www.linkedin.com/in/josemateoa
 
 - name: Jake Spracher
   pic: jake
-  position: Lead iOS Developer
+  position: iOS and Web Developer
   social:
     - title: twitter
       url: #
