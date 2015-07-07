@@ -18,7 +18,7 @@ $(function() {
             validateField(nameField);
             var emailField = $("input#email");
             var phoneField = $("input#phone");
-            var messageField = $("input#message");
+            var messageField = $("#message");
 
             var name = nameField.val();
             var email = emailField.val();
