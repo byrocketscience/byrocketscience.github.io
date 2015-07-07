@@ -1,6 +1,6 @@
 ---
 title: Engineering Without Borders
-subtitle: Hampton Roads Chapte
+subtitle: Web Development
 layout: default
 modal-id: 6
 date: 2015-06-08
