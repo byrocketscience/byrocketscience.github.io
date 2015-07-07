@@ -1,16 +1,16 @@
 ---
-title: Stephen Zhang
-subtitle: Website Design
+title: Openly
+subtitle: Mobile App Development
 layout: default
 modal-id: 1
 date: 2015-06-15
-img: dreams.png
-thumbnail: dreams-thumbnail.png
+img: openly1.png
+thumbnail: openly-thumbnail.png
 alt: image-alt
 project-date: June 2015
-client: Stephen Zhang
-category: Web Development
-clientwebsite: #
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+client: Openly
+category: Mobile App Development
+clientwebsite: http://getopenlyapp.com/
+description: Share your most heartfelt thoughts with other students, anonymously. Openly allow you to get in touch with people nearby, fellow students, or make new connections with people you've never met.  Start a conversation and see where Openly takes you!
 
 ---
