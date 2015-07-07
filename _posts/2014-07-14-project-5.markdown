@@ -1,16 +1,16 @@
 ---
-title: Startup Framework
-subtitle: Website Design
+title: Yum Yum Concessions
+subtitle: ECommerce, Website Design
 layout: default
 modal-id: 5
 date: 2015-05-11
-img: startup-framework.png
-thumbnail: startup-framework-thumbnail.png
+img: yumyum.png
+thumbnail: yumyum-thumbnail.png
 alt: image-alt
 project-date: May 2015
-client: Start Bootstrap
-category: Web Development
-clientwebsite: #
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+client: Yum Yum Concessions
+category: Web Development, ECommerce
+clientwebsite: http://yumyumkettlecorn.com/
+description: Yum Yum Concessions is a family owned business that specializes in the sell of kettle corn, pork rinds, and lemonade. They have a food truck that parks at different locations throughout the Hampton Roads area.
 
 ---
