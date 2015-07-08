@@ -41,10 +41,10 @@ people:
   pic: jake
   position: iOS and Web Developer
   social:
+    - title: globe
+      url: http://jakespracher.com
     - title: twitter
       url: https://twitter.com/jakespracher
-    - title: globe
-      url: https://github.com/jakespracher
     - title: linkedin
       url: http://www.linkedin.com/in/jakespracher
 
