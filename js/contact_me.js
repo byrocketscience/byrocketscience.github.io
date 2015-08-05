@@ -65,7 +65,30 @@ $(function() {
                     //clear all fields
                     $('#contactForm').trigger("reset");
                 },
-            })
+            });
+            $.ajax({
+                url: "https://rocketsci.bitrix24.com/crm/configs/import/lead.php",
+                type: "GET",
+                crossDomain: true,
+                dataType: "json",
+                data: {
+                    TITLE: name,
+                    PHONE_MOBILE: phone,
+                    EMAIL_WORK: email,
+                    COMMENTS: message,
+                    LOGIN: 'jmateo6@outlook.com',
+                    PASSWORD: 'NotRocketScience'
+
+                },
+                cache: false,
+                success: function() {
+                    console.log("success lead api call");
+                },
+                error: function(error) {
+                    console.log(error);
+                    console.log("error lead api");
+                }
+            });
         },
         filter: function() {
             return $(this).is(":visible");
