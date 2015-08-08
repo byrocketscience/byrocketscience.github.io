@@ -1,11 +1,5 @@
 $(function() {
 
-    function validateField(field) {
-        if( field.val().trim().length == 0 || field.val().trim() == '') {
-            field.parent().addClass('has-error');
-        }
-    }
-
     $("input,textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
@@ -15,21 +9,23 @@ $(function() {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
             var nameField = $("input#name");
-            validateField(nameField);
             var emailField = $("input#email");
             var phoneField = $("input#phone");
             var messageField = $("#message");
+            var budgetField = $("select#budget");
 
             var name = nameField.val();
             var email = emailField.val();
             var phone = phoneField.val();
             var message = messageField.val();
-            
+            var budget = budgetField.val();
+
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
+
             $.ajax({
                 url: "//formspree.io/contact@byrocketscience.com",
                 type: "POST",
@@ -39,6 +35,7 @@ $(function() {
                     name: name,
                     phone: phone,
                     email: email,
+                    budget: budget,
                     message: message
                 },
                 cache: false,
