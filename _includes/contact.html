@@ -12,7 +12,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <input type="text" class="form-control"  placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
@@ -22,6 +22,17 @@
                                 <div class="form-group">
                                     <input type="tel" class="form-control" placeholder="Your Phone" id="phone">
                                     <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <select name="budget" id="budget" class="form-control">
+                                        <option value="" selected >Select Your Budget Range</option>
+                                        <option value="1500:3000">$1,500 to $3,000</option>
+                                        <option value="3001:6000">$3,001 to $6,000</option>
+                                        <option value="6001:15000">$6,001 to $15,000</option>
+                                        <option value="15001:30000">$15,001 to $30,000</option>
+                                        <option value="30001:50000">$30,001 to $50,000</option>
+                                        <option value="50001+">$50,001 and up</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-md-6">
