@@ -1,0 +1,16 @@
+---
+title: InstaCycle
+subtitle: Mobile Development & Design
+layout: default
+modal-id: 4
+date: 2015-03-20
+img: survivalfoodplan.png
+thumbnail: survivalfoodplan-thumbnail.png
+alt: image-alt
+project-date: March 2015
+client: Survival Food Plan
+category: ECommerce, Web Development
+clientwebsite: https://survivalfoodplan.com/
+description: Survivalfoodplan.com is a family owned eCommerce website that specializes in the sell of emergency survival food and equipment.
+
+---
