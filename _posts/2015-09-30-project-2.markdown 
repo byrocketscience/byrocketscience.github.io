@@ -1,16 +1,15 @@
 ---
-title: WildShot
+title:  WildShot
 subtitle: Mobile Development
 layout: default
 modal-id: 2
 date: 2015-07-02
-img: highground.png
-thumbnail: highground-thumbnail.png
-alt: highgroundengineering
+img: wildshot_large.png
+thumbnail: wildshot.jpg
+alt: wildshot
 project-date: July 2015
 client: Highground Engineering
 category: Web Development
 clientwebsite: http://highgroundengineering.com/
-description: Highground Services is a multi-discipline engineering services firm providing a broad base of needs to our commercial and industrial customers. Highground Services excels in Mechanical, Electrical, Controls, and Fire Protection engineering projects in the industrial, commercial, and municipal markets. 
-
+description: WildShot is an anonymous social network that allows you to share images and videos with the people around you. Users are able to see each others gender based on a blue or pink border lining. The app uses geolocation, messaging, and several other features.
 ---

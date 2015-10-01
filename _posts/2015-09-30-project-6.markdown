@@ -4,13 +4,13 @@ subtitle: Mobile Development
 layout: default
 modal-id: 6
 date: 2015-06-08
-img: ewbhr.png
-thumbnail: ewbhr-thumbnail.png
+img: notify_large.png
+thumbnail: noteify.jpg
 alt: image-alt
 project-date: June 2015
 client: EWBHR
 category: Web Development
 clientwebsite: http://www.ewbhr.org/
-description: We redesigned EWBHR.org from the ground up to suit the needs of the expanding Engineers Without Borders - Hampton Roads Chapter. EWBHR.org features clean, professional styling throughout and has many practical features including custom forms and Google Groups integration.
+description: Noteify is a location based social network that is currently in the final stages of development. More details will be provided when the product available on the app store.
 
 ---
