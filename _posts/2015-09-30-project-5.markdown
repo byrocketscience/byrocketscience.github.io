@@ -7,10 +7,10 @@ date: 2015-05-11
 img: network_large.png
 thumbnail: network.jpg
 alt: image-alt
-project-date: May 2015
-client: Yum Yum Concessions
+project-date: August 2015
+client: Masego
 category: Web Development, ECommerce
-clientwebsite: http://yumyumkettlecorn.com/
+clientwebsite: http://www.masegomusic.com/network/
 description: Network By Masego is a melting pot of creatives and those in the arts. Network makes it easy to connect with a photographer, producer, musician, DJ, and several other types of creatives, especially in a world full of cliques. Network gets straight to the point. A user's connections, resources, and work is made visible so you can choose who you wish to connect or do business with.
 wow-slideDirection: Left
 
