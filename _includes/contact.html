@@ -15,7 +15,7 @@
               <p class="help-block text-danger"></p>
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address." required>
+              <input type="email" class="form-control" placeholder="Your Email *" id="email" data-validation-required-message="Please enter your email address." required>
               <p class="help-block text-danger"></p>
             </div>
             <div class="form-group">
@@ -23,15 +23,38 @@
               <p class="help-block text-danger"></p>
             </div>
             <div class="form-group">
-              <select name="budget" id="budget" class="form-control" data-validation-required-message="Please choose your pricing." required>
-                <option value="" selected>Select Your Budget Range</option>
-                <option value="1500:3000">$1,500 to $3,000</option>
-                <option value="3001:6000">$3,001 to $6,000</option>
-                <option value="6001:15000">$6,001 to $15,000</option>
-                <option value="15001:30000">$15,001 to $30,000</option>
-                <option value="30001:50000">$30,001 to $50,000</option>
-                <option value="50001+">$50,001 and up</option>
+              <ul class="list-unstyled service-picker" id="servicesList">
+                                 
+              </ul>
+              <select name="service" id="service" class="form-control" data-validation-required-message="Please choose the services you need" required>
+                <option value="" selected>Select Service</option>
+                <option value="AndroidiOS" data-lowest-price="6000">Android and iOS Apps</option>
+                <option value="Android" data-lowest-price="3000">Android App</option>
+                <option value="iOS" data-lowest-price="3000">iOS App</option>
+                <option value="Website" data-lowest-price="1500">Informational Website</option>
+                <option value="WebApp" data-lowest-price="3000">Web Application</option>
+                <option value="Api" data-lowest-price="5000">API</option>
+                <option value="Design" data-lowest-price="1000">Graphic Design</option>
+                <option value="Ecommerce" data-lowest-price="1500">eCommerce Site</option>
+                <option value="SEO" data-lowest-price="1000">Search Engine Optimization</option>
+                <option value="SMM" data-lowest-price="1000">Social Media Management</option>
+                <option value="Product" data-lowest-price="1000">Product Development</option>
+                <option value="Maintenance" data-lowest-price="1000">Web and/or App Maintenance</option>
               </select>
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="form-group">
+              <select name="budget" id="budget" class="form-control" data-validation-required-message="Please choose your budget." required>
+                <option value="" selected>Select Your Budget Range</option>
+                <option value="0:1499" data-min-value='1000'> $1,000 to $1500</option>
+                <option value="1500:3000" data-min-value='1500' >$1,500 to $3,000</option>
+                <option value="3001:6000" data-min-value='3000'>$3,000 to $6,000</option>
+                <option value="6001:15000" data-min-value='6000'>$6,000 to $15,000</option>
+                <option value="15001:30000" data-min-value='15000'>$15,000 to $30,000</option>
+                <option value="30001:50000" data-min-value='30000'>$30,000 to $50,000</option>
+                <option value="50001" data-min-value='50000'>More than $50,000</option>
+              </select>
+              <p class="help-block text-danger"></p>
             </div>
           </div>
           <div class="col-md-6 col-sm-12 col-xs-12 contact-message-wrap">
@@ -43,7 +66,7 @@
         </div>
         <div class="col-lg-12 text-center">
           <div id="success"></div>
-          <button type="submit" class="btn btn-xl">Send Message</button>
+          <input type="submit" class="btn btn-xl" id="submitFormButton">Send Message</button>
         </div>
       </form>
     </div>
