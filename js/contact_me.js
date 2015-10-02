@@ -168,7 +168,7 @@ var sendForm = function(name, email, phone, message, budget, service) {
 function recalcBudget(minPrice) {
     $("#budget option").each(function(){
         var budget = $(this);
-        if (budget.data().minValue && budget.data().minValue < minPrice) {
+        if (budget.data().minValue < minPrice) {
             budget.fadeOut();
         } else {
             budget.fadeIn();
@@ -178,9 +178,7 @@ function recalcBudget(minPrice) {
 
 $("#service").on('change', function(e) {
     var element = $("option:selected", this);
-    if (element.data().lowestPrice) {
-        recalcBudget(element.data().lowestPrice);
-    };
+    recalcBudget(element.data().lowestPrice);
     
     $("#budget .default").attr('selected', 'selected');
 });
