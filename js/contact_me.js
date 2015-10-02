@@ -181,6 +181,8 @@ $("#service").on('change', function(e) {
     if (element.data().lowestPrice) {
         recalcBudget(element.data().lowestPrice);
     };
+    
+    $("#budget .default").attr('selected', 'selected');
 });
 
 $('#submitFormButton').click(function(event){
