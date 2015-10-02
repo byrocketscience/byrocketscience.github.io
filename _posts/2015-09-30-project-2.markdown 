@@ -1,0 +1,17 @@
+---
+title:  WildShot
+subtitle: Mobile Development
+layout: default
+modal-id: 2
+date: 2015-07-02
+img: wildshot_large.png
+thumbnail: wildshot.jpg
+alt: wildshot
+project-date: July 2015
+client: Highground Engineering
+category: Web Development
+clientwebsite: http://highgroundengineering.com/
+description: WildShot is an anonymous social network that allows you to share images and videos with the people around you. Users are able to see each others gender based on a blue or pink border lining. The app uses geolocation, messaging, and several other features.
+wow-slideDirection: Right
+wow-delay: 0.5s
+---

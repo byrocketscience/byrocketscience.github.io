@@ -9,7 +9,7 @@
             </div>
             <div class="row">
             {% for post in site.posts %}
-                <div class="col-md-4 col-sm-6 portfolio-item">
+            <div data-wow-duration="0.5s" data-wow-offset="10" data-wow-delay="{{ post.wow-dealy }}" class="col-md-4 col-sm-6 portfolio-item wow slideIn{{ post.wow-slideDirection }}">
                     <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">

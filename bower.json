@@ -1,0 +1,22 @@
+{
+  "name": "byrocketscience.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/antlis/byrocketscience.github.io",
+  "authors": [
+    "xzarxzes <xzarxzes@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "wow": "~1.1.2"
+  }
+}

@@ -1,12 +1,12 @@
 ---
-title: Highground Engineering
-subtitle: Website Design
+title: WildShot
+subtitle: Mobile Development
 layout: default
 modal-id: 2
 date: 2015-07-02
 img: highground.png
-thumbnail: highground-thumbnail.png
-alt: highgroundengineering
+thumbnail: wildshot.png
+alt: wildshot
 project-date: July 2015
 client: Highground Engineering
 category: Web Development

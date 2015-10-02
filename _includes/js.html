@@ -18,6 +18,8 @@
     <script src="{{ "/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/js/classie.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/js/cbpAnimatedHeader.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/vendor/type-text.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/bower_components/wow/dist/wow.min.js" | prepend: site.baseurl }}"></script>
 
     <!-- Contact Form JavaScript -->
     <script src="{{ "/js/jqBootstrapValidation.js" | prepend: site.baseurl }}"></script>
@@ -26,3 +28,6 @@
     <!-- Custom Theme JavaScript -->
     <script src="{{ "/js/agency.js" | prepend: site.baseurl }}"></script>
 
+    <script>
+      new WOW({mobile: false}).init();
+    </script>

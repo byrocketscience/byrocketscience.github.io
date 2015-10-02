@@ -1,0 +1,17 @@
+---
+title: Noteify
+subtitle: Mobile Development
+layout: default
+modal-id: 6
+date: 2015-06-08
+img: notify_large.png
+thumbnail: noteify.jpg
+alt: image-alt
+project-date: June 2015
+client: EWBHR
+category: Web Development
+clientwebsite: http://www.ewbhr.org/
+description: Noteify is a location based social network that is currently in the final stages of development. More details will be provided when the product available on the app store.
+wow-slideDirection: Right
+wow-delay: 1.5s
+---
