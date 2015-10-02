@@ -1,8 +1,13 @@
 {% include css/bootstrap.min.css %}
 {% include css/agency.css %}
 
+html, body {
+  width: 100% !important;
+}
+
 .hero {
   position: relative;
+  overflow: hidden;
 }
 
 .hero-social {
@@ -13,9 +18,118 @@
   font-size: 2em;
 }
 
+.hero-tell-more {
+  display: block;
+  width: 250px;
+  margin: 50px auto 0 auto;
+}
+
+.contact-message-wrap {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.contact-message {
+  position: absolute;
+  bottom: 0; top: 0;
+  right: 15px; left: 15px;
+}
+
+.contact-message-wrap textarea {
+  box-sizing: border-box;
+  height: 100% !important;
+}
+
+
+/*
+ * Row with equal height columns
+ * --------------------------------------------------
+ */
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+/*
+ * Styles copied from the Grid example to make grid rows & columns visible.
+ */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+h4 {
+  margin-top: 25px;
+}
+.row {
+  margin-bottom: 20px;
+}
+.row .row {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+/* [class*="col-"] { */
+/*   padding-top: 15px; */
+/*   padding-bottom: 15px; */
+/*   background-color: #eee; */
+/*   background-color: rgba(86,61,124,.15); */
+/*   border: 1px solid #ddd; */
+/*   border: 1px solid rgba(86,61,124,.2); */
+/* } */
+
+/*
+ * Callout styles copied from Bootstrap's main docs.
+ */
+/* Common styles for all types */
+.bs-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border-left: 3px solid #eee;
+}
+.bs-callout h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+.bs-callout code {
+  background-color: #fff;
+  border-radius: 3px;
+}
+/* Variations */
+.bs-callout-danger {
+  background-color: #fdf7f7;
+  border-color: #d9534f;
+}
+.bs-callout-danger h4 {
+  color: #d9534f;
+}
+.bs-callout-warning {
+  background-color: #fcf8f2;
+  border-color: #f0ad4e;
+}
+.bs-callout-warning h4 {
+  color: #f0ad4e;
+}
+.bs-callout-info {
+  background-color: #f4f8fa;
+  border-color: #5bc0de;
+}
+.bs-callout-info h4 {
+  color: #5bc0de;
+}
+
+
 /* --------------------------------
 xrotate-2
 -------------------------------- */
+.bold, .cd-words-wrapper b {
+  font-size: 75px;
+}
+
 .cd-words-wrapper {
     display: inline-block;
     position: relative;
@@ -213,4 +327,159 @@ xrotate-2
     -o-transform: translateZ(-20px) rotateX(-90deg);
     transform: translateZ(-20px) rotateX(-90deg);
 }
+}
+
+/* clients -------------------------------------------------------- */
+#clients{
+    background: #282B2D;
+    padding:20px 0px;
+    position:relative;
+    overflow: hidden;
+    text-align: center;
+}
+.clientsLogos a{
+    display: inline-block;
+    margin: 5px 15px;
+}
+.imgClient{
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    max-height: 25px;
+}
+.imgClient:hover{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 395px) {
+  .navbar-brand img {
+    width: 250px;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .navbar-brand img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hero-social {
+    display: inline-block;
+    padding-left: 0;
+    position: static;
+    margin: auto;
+  }
+  .hero-social li {
+    display: inline-block;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    font-size: 1.5em;
+  }
+  .hero-social li:first-child {
+    padding-left: 0;
+  }
+  .hero-social li a {
+    color: #fff;
+  }
+  .hero-social li a:hover {
+    color: #26A69A;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header .intro-text .intro-heading, .cd-words-wrapper b {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header .intro-text .intro-heading, .cd-words-wrapper b {
+    font-size: 50px;
+  }
+}
+
+/* redifine navbar collapse brekpoint */
+@media (max-width: 1000px) {
+    .navbar-default {
+      background: #222;
+    }
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-form-wrap.row-eq-height {
+    display: block;
+  }
+  .contac-message-wrap {
+    margin-bottom: 0;
+  }
+  .contact-message {
+    position: static;
+  }
+  .contact-message-wrap textarea {
+    min-height: 350px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .bold {
+    display: block;
+    margin-bottom: 25px;
+  }
+  .bold, .cd-words-wrapper b {
+    font-size: 60px;
+  }
+  .letters-websites {
+    left: 5px !important;
+  }
+  .letters-apps {
+    left: 75px !important;
+  }
+  .letters-designs {
+    left: 25px !important;
+  }
+}
+
+.modal {
+  overflow-y: scroll !important;
 }
