@@ -26,7 +26,7 @@ people:
     - title: linkedin
       url: https://www.linkedin.com/in/davidjenkinspe
 
-- name: O'Neill Mateo
+- name: Jose Mateo
   pic: jose
   position: Android and Web Developer
   social:
@@ -67,8 +67,15 @@ people:
       url: "https://twitter.com/xzarxzez"
     - title: github
       url: "https://github.com/antlis"
+
+- name: Rinat Yahin
+  pic: rinat
+  position: iOS Developer
+  social:
+    - title: twitter
+      url: "https://twitter.com/_6234530394982"
     - title: linkedin
-      url: "#"
+      url: "https://ru.linkedin.com/pub/rinat-yahin/b2/65b/ab4"
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
