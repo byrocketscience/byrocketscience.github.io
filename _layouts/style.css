@@ -507,3 +507,16 @@ xrotate-2
 .modal {
   overflow-y: scroll !important;
 }
+
+.service-picker {
+  background: #fff;
+  display: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.service-picker li {
+  margin-left: 15px;
+}
+
+
