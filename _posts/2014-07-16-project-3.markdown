@@ -12,5 +12,6 @@ client: BucketBall
 category: ECommerce, Product Design
 clientwebsite: http://www.bucketball.com/
 description: BucketBall is the hottest new beach, poolside and backyard game that is played like beer pong but on a larger scale with buckets and BucketBall game balls. The Official BucketBall Set comes with 12 buckets total (6 orange buckets and 6 blue buckets), 2 BucketBall Game Balls, and a custom made Tote Bag.
+wow-slideDirection: Left
 
 ---

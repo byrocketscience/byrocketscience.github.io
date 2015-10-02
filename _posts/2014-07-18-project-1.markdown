@@ -12,5 +12,7 @@ client: Openly
 category: Mobile App Development
 clientwebsite: http://getopenlyapp.com/
 description: Share your most heartfelt thoughts with other students, anonymously. Openly allow you to get in touch with people nearby, fellow students, or make new connections with people you've never met.  Start a conversation and see where Openly takes you!
+wow-slideDirection: Right
+wow-delay: 1s
 
 ---

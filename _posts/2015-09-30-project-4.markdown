@@ -12,5 +12,6 @@ client: Survival Food Plan
 category: ECommerce, Web Development
 clientwebsite: https://survivalfoodplan.com/
 description: The application, a mash-up of Instagram, Gumby and Cycle Trader APIs, shows trending motorcycle models. It pulls up user-submitted images from Instagram as well as photos shown on the Cycle Trader website. This allows motorcycle enthusiasts to see these cycles in action, and know if similar bikes are for sale or trade on Cycle Trader.
+wow-slideDirection: Left
 
 ---
