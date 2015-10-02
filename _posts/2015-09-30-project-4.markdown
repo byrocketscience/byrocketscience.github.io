@@ -3,14 +3,14 @@ title: InstaCycle
 subtitle: Mobile Development & Design
 layout: default
 modal-id: 4
-date: 2015-03-20
+date: 2015-09-20
 img: insta_large.png
 thumbnail: insta.jpg
 alt: image-alt
-project-date: March 2015
-client: Survival Food Plan
+project-date: September 2013
+client: InstaCycle
 category: ECommerce, Web Development
-clientwebsite: https://survivalfoodplan.com/
+clientwebsite: https://projects.invisionapp.com/share/WTRGA9NM#/screens
 description: The application, a mash-up of Instagram, Gumby and Cycle Trader APIs, shows trending motorcycle models. It pulls up user-submitted images from Instagram as well as photos shown on the Cycle Trader website. This allows motorcycle enthusiasts to see these cycles in action, and know if similar bikes are for sale or trade on Cycle Trader.
 wow-slideDirection: Left
 
