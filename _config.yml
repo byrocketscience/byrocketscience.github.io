@@ -91,9 +91,9 @@ social:
     url: http://instagram.com/ByRocketScience
 
 # Postal address (add as many lines as necessary)
-address:
-  - line: 308 Westover Avenue
-  - line: Norfolk, VA 23507
+#address:
+#  - line: 308 Westover Avenue
+#  - line: Norfolk, VA 23507
 
 # Build settings
 markdown: kramdown
