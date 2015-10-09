@@ -1,5 +1,37 @@
-var minQuotePrice = 1500;
-var maxQuotePrice = 50000;
+var budgetOptions = [
+    {
+        min: 0,
+        max: 1000
+    },
+    {
+        min: 1000,
+        max: 1500
+    },
+    {
+        min: 1500,
+        max: 3000
+    },
+    {
+        min: 3000,
+        max: 6000
+    },
+    {
+        min: 6000,
+        max: 15000
+    },
+    {
+        min: 15000,
+        max: 30000
+    },
+    {
+        min: 30000,
+        max: 50000
+    },
+    {
+        min: 50000,
+        max: 0
+    }
+];
 
 var sendForm = function(name, email, phone, message, budget, service) {
     $.ajax({
@@ -66,112 +98,32 @@ var sendForm = function(name, email, phone, message, budget, service) {
         }
     });    
 };
-// $(function() {
-//     $("input,textarea, select").not("[type=submit]").jqBootstrapValidation({
-//         preventSubmit: true,
-//         submitError: function($form, event, errors) {
-//             // additional error messages or events
-//         },
-//         submitSuccess: function($form, event) {
-//             event.preventDefault(); // prevent default submit behaviour
-//             // get values from FORM
-//             var nameField = $("input#name");
-//             var emailField = $("input#email");
-//             var phoneField = $("input#phone");
-//             var messageField = $("#message");
-//             var budgetField = $("select#budget");
 
-//             var name = nameField.val();
-//             var email = emailField.val();
-//             var phone = phoneField.val();
-//             var message = messageField.val();
-//             var budget = budgetField.val();
+function moneyString(x) {
+    return '$' + x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
-//             var firstName = name; // For Success/Failure Message
-//             // Check for white space in name for Success/Fail message
-//             if (firstName.indexOf(' ') >= 0) {
-//                 firstName = name.split(' ').slice(0, -1).join(' ');
-//             }
+function getBudgetOption(budget) {
+    var option = '<option value="' + budget.min + ':' + budget.max + '">';
+    if (budget.min === 0) {
+        option += 'Less than ' + moneyString(budget.max);
+    } else if( budget.max === 0) {
+        option += 'More than '  + moneyString(budget.min);
+    } else {
+        option += moneyString(budget.min) + " to " + moneyString(budget.max);
+    }
+    option += '</option>';
 
-//             $.ajax({
-//                 url: "//formspree.io/contact@byrocketscience.com",
-//                 type: "POST",
-//                 crossDomain: true,
-//                 dataType: "json",
-//                 data: {
-//                     name: name,
-//                     phone: phone,
-//                     email: email,
-//                     budget: budget,
-//                     message: message
-//                 },
-//                 cache: false,
-//                 success: function() {
-//                     // Success message
-//                     $('#success').html("<div class='alert alert-success'>");
-//                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-//                         .append("</button>");
-//                     $('#success > .alert-success')
-//                         .append("<strong>Your message has been sent. </strong>");
-//                     $('#success > .alert-success')
-//                         .append('</div>');
-
-//                     //clear all fields
-//                     $('#contactForm').trigger("reset");
-//                 },
-//                 error: function() {
-//                     // Fail message
-//                     $('#success').html("<div class='alert alert-danger'>");
-//                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-//                         .append("</button>");
-//                     $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!");
-//                     $('#success > .alert-danger').append('</div>');
-//                     //clear all fields
-//                     $('#contactForm').trigger("reset");
-//                 },
-//             });
-//             $.ajax({
-//                 url: "https://rocketsci.bitrix24.com/crm/configs/import/lead.php",
-//                 type: "GET",
-//                 crossDomain: true,
-//                 dataType: "json",
-//                 data: {
-//                     TITLE: name,
-//                     PHONE_MOBILE: phone,
-//                     EMAIL_WORK: email,
-//                     COMMENTS: message,
-//                     LOGIN: 'jmateo6@outlook.com',
-//                     PASSWORD: 'NotRocketScience'
-
-//                 },
-//                 cache: false,
-//                 success: function() {
-//                     console.log("success lead api call");
-//                 },
-//                 error: function(error) {
-//                     console.log(error);
-//                     console.log("error lead api");
-//                 }
-//             });
-//         },
-//         filter: function() {
-//             return $(this).is(":visible");
-//         }
-//     });
-
-//     $("a[data-toggle=\"tab\"]").click(function(e) {
-//         e.preventDefault();
-//         $(this).tab("show");
-//     });
-// });
+    return option;
+}
 
 function recalcBudget(minPrice) {
-    $("#budget option").each(function(){
-        var budget = $(this);
-        if (budget.data().minValue < minPrice) {
-            budget.fadeOut();
-        } else {
-            budget.fadeIn();
+    var budgetSelect = $("#budget");
+    budgetSelect.html('<option value="">Select your Budget Range</option>');
+
+    budgetOptions.forEach(function(budget){
+        if (budget.min >= minPrice) {
+            budgetSelect.append(getBudgetOption(budget));
         }
     });
 }
@@ -179,8 +131,6 @@ function recalcBudget(minPrice) {
 $("#service").on('change', function(e) {
     var element = $("option:selected", this);
     recalcBudget(element.data().lowestPrice);
-    
-    $("#budget .default").attr('selected', 'selected');
 });
 
 $('#submitFormButton').click(function(event){
@@ -217,29 +167,6 @@ $('#submitFormButton').click(function(event){
     };
 });
 
-
-// $(function(){
-//     var getCheckboxHtml = function(element) {
-//         return '<li class="checkbox"><label><input type="checkbox" value="' + element.val() +'">' + element.html() + '</label></li>';
-//     };
-//     var servicesSelect = $("#service");
-//     var servicesList = $("#servicesList");
-//     $("#service option").each(function(){
-//         var element = $(this);
-//         if(element.val() !== '') {
-//                         element.click(function(){
-//                 console.log($(this));
-//                 if (element.checked) {
-
-//                 } else {
-
-//                 }
-//             });
-//             servicesList.append(getCheckboxHtml(element));
-//         }
-//     });
-
-// });
 
 /*When clicking on Full hide fail/success boxes */
 $('#name').focus(function() {

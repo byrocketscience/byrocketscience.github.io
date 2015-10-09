@@ -519,4 +519,8 @@ xrotate-2
   margin-left: 15px;
 }
 
+select option[disabled] {
+    display: none;
+}
+
 
