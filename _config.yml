@@ -20,6 +20,7 @@ people:
 - name: David Jenkins
   pic: david
   position: Project Lead Developer
+  colslg: 3
   social:
     - title: twitter
       url: https://twitter.com/boarderdav
@@ -31,6 +32,7 @@ people:
 - name: Jose Mateo
   pic: jose
   position: Android and Web Developer
+  colslg: 3
   social:
     - title: globe
       url: http://mateoj.com
@@ -42,6 +44,7 @@ people:
 - name: Jake Spracher
   pic: jake
   position: iOS and Web Developer
+  colslg: 3
   social:
     - title: globe
       url: http://jakespracher.com
@@ -53,6 +56,7 @@ people:
 - name: Franck Tchouambou
   pic: franck
   position: Growth Hacker & Business Developer
+  colslg: 3
   social:
     - title: twitter
       url: https://www.twitter.com/thyfranck
@@ -61,9 +65,20 @@ people:
     - title: linkedin
       url: https://www.linkedin.com/in/franckt
 
+- name: Chandler Perry
+  pic: chandler
+  position: Videographer
+  colslg: 4
+  social:
+    - title: youtube-square
+      url: "https://www.youtube.com/user/premadepros"
+    - title: vimeo
+      url: "https://vimeo.com/user9177602"
+
 - name: Anton Lisovsky
   pic: anton
   position: Web Developer
+  colslg: 4
   social:
     - title: twitter
       url: "https://twitter.com/xzarxzez"
@@ -73,6 +88,7 @@ people:
 - name: Rinat Yahin
   pic: rinat
   position: iOS Developer
+  colslg: 4
   social:
     - title: twitter
       url: "https://twitter.com/_6234530394982"

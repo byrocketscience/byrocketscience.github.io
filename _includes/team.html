@@ -9,7 +9,7 @@
             </div>
             <div class="row">
                 {% for member in site.people %}
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow">
+                <div class="col-lg-{{ member.colslg }} col-md-6 col-sm-6 col-xs-12 wow">
                   <div class="team-member wow slideInLeft" data-wow-duration="0.5s" data-wow-offset="10" data-wow-delay="0.{{ forloop.index }}s">
                         <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
                         <h4>{{ member.name }}</h4>
@@ -26,7 +26,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="text-muted lead">We have more than 20 years of combined web, mobile, and application experience serving our clients with the highest possible quality products.</p>
+                    <p class="text-muted lead">We have more than 35 years of combined web, mobile, and application experience serving our clients with the highest possible quality products.</p>
                 </div>
             </div>
         </div>
