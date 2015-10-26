@@ -68,17 +68,25 @@ people:
 - name: Chandler Perry
   pic: chandler
   position: Videographer
-  colslg: 4
+  colslg: 3
   social:
     - title: youtube-square
       url: "https://www.youtube.com/user/premadepros"
     - title: vimeo
       url: "https://vimeo.com/user9177602"
 
+- name: Edanry Rivera
+  pic: edanry
+  position: Social Media Director
+  colslg: 3
+  social:
+    - title: facebook
+      url: "https://www.facebook.com/edanry.rivera"
+
 - name: Anton Lisovsky
   pic: anton
   position: Web Developer
-  colslg: 4
+  colslg: 3
   social:
     - title: twitter
       url: "https://twitter.com/xzarxzez"
@@ -88,7 +96,7 @@ people:
 - name: Rinat Yahin
   pic: rinat
   position: iOS Developer
-  colslg: 4
+  colslg: 3
   social:
     - title: twitter
       url: "https://twitter.com/_6234530394982"
