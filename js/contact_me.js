@@ -33,9 +33,9 @@ var budgetOptions = [
     }
 ];
 
-var sendForm = function(name, email, phone, message, budget, service) {
+var sendForm = function(recepient, name, email, phone, message, budget, service) {
     $.ajax({
-        url: "//formspree.io/contact@byrocketscience.com",
+        url: "//formspree.io/" + recepient,
         type: "POST",
         crossDomain: true,
         dataType: "json",
@@ -163,7 +163,8 @@ $('#submitFormButton').click(function(event){
     });
 
     if (!errors) {
-        sendForm(name, email, phone, message, budget, service);
+	sendForm("contact@byrocketscience.com", name, email, phone, message, budget, service);
+        sendForm("q2z7u6b0k5v6k6h7@turnttechnologies.slack.com", name, email, phone, message, budget, service);
     };
 });
 
